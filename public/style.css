@@ -1,0 +1,86 @@
+/* Ümumi Stil */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background: #2c3e50;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    animation: fadeIn 1s ease-out;
+}
+
+.card h1 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: #bdc3c7;
+}
+
+.speed-display {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.speed-display .unit {
+    font-size: 1rem;
+    margin-left: 5px;
+    color: #7f8c8d;
+}
+
+button {
+    background: #16a085;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1abc9c;
+}
+
+button:disabled {
+    background: #7f8c8d;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
